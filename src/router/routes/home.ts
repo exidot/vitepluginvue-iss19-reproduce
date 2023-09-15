@@ -3,7 +3,7 @@ import { RouteRecordRaw } from 'vue-router'
 
 const route: RouteRecordRaw = {
   path: '/',
-  component: () => import('@/layouts/default.vue'),
+  component: () => import('@/layouts/default.vue'),    // src/router/routes/login.ts has a same imported. login.ts 有个相同导入
   children: [{
     path: '',
     name: 'home',
